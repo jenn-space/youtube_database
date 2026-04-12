@@ -1,20 +1,101 @@
-# youtube_database
-Youtube Top 100 Songs Analysis
+# 🎵 YouTube Top 100 Songs Analysis (2025)
 
-The dataset features the Top 100 Songs on YouTube in 2025, representing the most popular and trending music videos worldwide. Each entry includes key metadata such as song title, artist/channel, views, duration, tags, and channel subscribers. 
+SQL + Data Analytics Project
 
-It can be used for:
-music trend analysis (track popular artists, genres, and collaborations),
-YouTube analytics (study view counts, durations, and channel growth),
-cultural insights–explore the rise of global hits, K-pop, and pop music,
-machine learning projects (build models for recommendations, popularity prediction, or text analysis).
+✨ TL;DR
 
-It contains: 
-100 entries–each representing a top YouTube song,
-13 columns–including views, channel info, and metadata,
-Artists featured–Bruno Mars, Lady Gaga, Billie Eilish, ROSÉ, Reneé Rapp, and more.
+Analyzed the Top 100 YouTube songs of 2025 using SQL to uncover what actually drives video performance—finding that artist popularity and virality matter far more than followers or video length.
 
-The dataset has a usability score of 10, which is the maximum and indicates that the dataset is organized and well-documented for analysis.
-Given the structure and scope of this dataset, we anticipate that around 6 tables could capture its relational structure effectively. Example tables include songs, artists, metrics, genres, song_genre, and youtube_metadata. 
-The “YouTube Music Hits: Top 100 of 2025” dataset—while narrower in scope than large trending datasets—is suitable for a relational database design with multiple interconnected tables. The defined tables above will allow you to explore song rankings, artist contributions, genre comparisons, and view/like metrics in a structured way.
+🚨 Problem
 
+Many assume that more subscribers or longer videos = more views, but it’s unclear what truly drives performance on YouTube music charts.
+
+🎯 Objective
+
+Identify the key drivers of video views and chart success by analyzing top-performing songs and artists.
+
+🛠️ What I Did
+
+📊 Data & Setup
+
+Dataset: Top 100 YouTube songs (2025)
+
+100 records, 13 features (views, artist, duration, tags, subscribers, etc.)
+
+Built and queried data using MySQL
+
+🏗️ Data Modeling
+
+-Designed a relational schema linking:
+
+-Songs
+
+-Channels (artists)
+
+-Videos
+
+-Cleaned and standardized fields for consistent analysis
+
+🔍 Analysis (SQL)
+
+-Ranked top songs per artist
+
+-Identified highest-performing channels
+
+-Measured correlations between:
+
+-Views vs subscribers
+
+-Views vs video duration
+
+-Explored genre and Top 25 trends
+
+📈 Key Insights
+
+⭐ Artist popularity drives performance
+
+ROSÉ, Lady Gaga, Billie Eilish dominate billions of views
+
+📉 Weak correlation with followers (0.11)
+
+More subscribers ≠ more views
+
+⏱️ Weak correlation with video duration (0.10)
+
+Video length has little impact on performance
+
+🌍 Pop & K-pop dominate
+
+Strong global fanbases + social media virality
+
+🔥 Virality > platform metrics
+
+TikTok trends and hype drive engagement more than technical factors
+
+💼 Business Impact
+
+Shifts strategy from:
+
+❌ Focusing on channel size
+
+✅ Investing in viral content + artist branding
+
+Helps:
+
+Artists optimize release strategy
+
+Marketers prioritize social buzz over format tweaks
+
+Platforms improve recommendation logic
+
+🧠 Key Takeaways
+
+Engagement is driven by who the artist is, not platform metrics
+
+Data modeling + SQL can uncover non-obvious performance drivers
+
+Correlation ≠ intuition (followers don’t guarantee views)
+
+🧰 Tech Stack
+
+MySQL • SQL • Data Modeling • Data Cleaning • Analytics
